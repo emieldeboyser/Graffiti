@@ -7,6 +7,10 @@ body {
   font-size: 16px;
 }
 
+/* * {
+  border: 1px solid red;
+} */
+
 /* JS */
 .none {
   display: none !important;
@@ -152,7 +156,14 @@ ol {
   gap: 20px;
   height: 100vh;
   align-items: center;
-  flex-direction: row-reverse;
+}
+
+.appText {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* FOOTER */
@@ -164,4 +175,40 @@ footer {
   color: white;
   border-top: 1px solid #000;
   padding: 10px 20px;
+}
+
+/* Thanks to W3Schools.com */
+
+/* SLIDESHOW */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  object-fit: cover;
+  height: 550px;
+  max-width: 500px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
 }
