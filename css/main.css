@@ -188,9 +188,9 @@ footer {
 }
 
 /* Hide the images by default */
-.mySlides {
+/* .mySlides {
   display: none;
-}
+} */
 
 .mySlides img {
   object-fit: cover;
