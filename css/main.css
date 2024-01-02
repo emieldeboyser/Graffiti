@@ -1,6 +1,6 @@
 body {
-  margin: 0 20px;
   padding: 0;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   background: #fff;
   color: #000;
@@ -13,6 +13,12 @@ body {
 }
 
 /* HEADEr */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 header nav ul {
   margin: 0;
   padding: 0;
@@ -37,6 +43,7 @@ header nav ul li a {
   display: flex;
   gap: 10px;
 }
+
 /* HERO */
 .container {
   width: 100%;
@@ -78,14 +85,31 @@ header nav ul li a {
   max-width: 500px;
 }
 
+.imgSide {
+  background-image: url(../img/hero.jpeg);
+  width: 50vw;
+  height: 65vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .hero {
   margin: 0 !important;
 }
 
 /* ABOUt */
+
 .about ol li {
   list-style-type: none;
   margin: 10px 0;
+}
+
+ol {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about ol li button {
@@ -94,14 +118,8 @@ header nav ul li a {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #969696;
-  width: 80vw;
+  width: 95vw;
   text-align: right;
-}
-
-/* Problem */
-
-.about {
-  margin: 5vh 0;
 }
 
 .about ol li button:hover {
@@ -129,10 +147,21 @@ header nav ul li a {
 
 /* APP */
 .app {
-  width: 100%;
   display: flex;
   justify-content: space-around;
   gap: 20px;
+  height: 100vh;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 /* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  border-top: 1px solid #000;
+  padding: 10px 20px;
+}
