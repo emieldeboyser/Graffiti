@@ -3,7 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Grafgitti</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/3ab5c64d34.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">graffiti</a></li>
+          <div class="ultraRight">
+            <li><a href="#app">App</a></li>
+            <li><a href="#about">Over ons</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <!-- Hero -->
+    <div class="container hero">
+      <div class="side textSide">
+        <h1>Grafgitti</h1>
+        <p>
+          Grafgitti is een app die het mogelijk maakt om jouw muur een nieuw
+          leven te geven. Onze artiesten helpen je hierbij!
+        </p>
+        <a href="#app">Download de app</a>
+      </div>
+      <div class="side imgSide">
+        <img src="img/hero.jpeg" alt="hero" />
+      </div>
+    </div>
+    <div class="about">
+      <h1>Hoe $title is ontstaan?</h1>
+      <h2>Chronologische opbouw:</h2>
+      <ol>
+        <li>
+          <button class="problemBtn">
+            Probleem <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </li>
+        <li>
+          <button class="fieldBtn">
+            Veld onderzoek <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </li>
+        <li>
+          <button class="brainstormBtn">
+            Brainstorm <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </li>
+        <li>
+          <button class="solutionBtn">
+            Oplossing <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </li>
+      </ol>
+      <div class="none" id="problem">
+        <div class="problemText">
+          <h3>Probleem</h3>
+          <p>
+            In het begin van dit semester waren we kristisch aan het nadenken
+            over ons probleem...
+          </p>
+        </div>
+        <img src="https://picsum.photos/200" alt="toepasandeFoto" />
+      </div>
+      <div class="none" id="solved">
+        <img src="https://picsum.photos/200" alt="toepasandeFoto" />
+        <div class="solvedText">
+          <h3>Oplossing</h3>
+          <p>
+            In het begin van dit semester waren we kristisch aan het nadenken
+            over ons probleem...
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- APP -->
+    <div class="app">
+      <div class="appText">
+        <h1 id="app">Hier heb je hem!</h1>
+        <p>Download de app en transformeer jouw muur!</p>
+      </div>
+      <div class="appImg">
+        <img src="img/app.png" alt="app" />
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footerText">
+        <h1 id="about">Over ons</h1>
+        <p>
+          Wij zijn een groepje studenten die een oplossing hebben gevonden voor
+          een probleem dat we zelf hebben ervaren. We hebben een app gemaakt
+          waarbij je een foto van je muur kan uploaden en een artiest kan kiezen
+          die jouw muur een nieuw leven geeft!
+        </p>
+      </div>
+      <div class="footerImg">
+        <img src="img/footer.png" alt="footer" />
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
