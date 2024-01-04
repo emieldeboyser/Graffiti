@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grafgitti</title>
+    <title>$Title</title>
     <link rel="stylesheet" href="css/main.css" />
     <script
       src="https://kit.fontawesome.com/3ab5c64d34.js"
       crossorigin="anonymous"
     ></script>
+    <!-- add icon -->
+    <!-- <a href='https://pngtree.com/freepng/spray-paint-icon_4490452.html'>png image from pngtree.com/</a> -->
+    <link rel="icon" type="image/x-icon" href="/img/icon.png" />
+
+    <link rel="icon" href="img/logo.png" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#">graffiti</a></li>
+          <li><a href="#">$Title</a></li>
           <div class="ultraRight">
             <li><a href="#app">App</a></li>
             <li><a href="#about">Over ons</a></li>
@@ -25,12 +30,15 @@
     <!-- Hero -->
     <div class="container hero">
       <div class="side textSide">
-        <h1>Grafgitti</h1>
+        <h1>$Title</h1>
         <p>
-          Grafgitti is een app die het mogelijk maakt om jouw muur een nieuw
-          leven te geven. Onze artiesten helpen je hierbij!
+          Welkom op onze website. Zoekt u een goede manier om uw muur nieuw
+          leven te geven via graffiti?
+          <br />
+          Download dan nu onze gloednieuwe app en contacteer een graffiti
+          artiest naar jou keuze!
         </p>
-        <a href="#app">Download de app</a>
+        <a href="#app" class="CTA">Download de app</a>
       </div>
       <div class="side imgSide"></div>
     </div>
@@ -39,7 +47,7 @@
       <h1>Hoe $title is ontstaan?</h1>
       <ol>
         <li>
-          <button class="problemBtn">
+          <button class="problemBtn openDivBtn">
             Probleem <i class="fa-solid fa-caret-down"></i>
           </button>
         </li>
@@ -47,37 +55,69 @@
           <div class="problemText">
             <h3>Probleem</h3>
             <p>
-              In het begin van dit semester waren we kristisch aan het nadenken
-              over ons probleem...
+              In het begin van dit semester waren we kritisch aan het nadenken
+              over ons probleem. Toen kwamen we tot het besef dat er op deze
+              wereld te veel vandalisme is met het gebruik van graffiti. Soms
+              krijgen mensen graffiti op hun eigendom zonder dat zij dit willen,
+              en om het af te kuisen hangt er een serieus prijskaartje aan vast.
+              Ook willen graffitikunstenaars natuurlijk hun talent tonen maar
+              hebben vaak ook niet de plaats waar ze dit legaal kunnen doen, dus
+              doen ze dit vaak op gevels van mensen.
+            </p>
+          </div>
+          <img src="/img/problem.jpeg" alt="toepasandeFoto" />
+        </div>
+        <li>
+          <button class="fieldBtn openDivBtn">
+            Veld onderzoek <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </li>
+        <div class="none" id="field">
+          <div class="fieldText">
+            <h3>Veld onderzoek</h3>
+            <p>
+              We zijn als groep op stap gegaan door Gent Sint-Pieters om wat
+              vragen te stellen aan verschillende personen.
+            </p>
+          </div>
+          <img src="/img/field.jpeg" alt="toepasandeFoto" />
+        </div>
+        <li>
+          <button class="brainStormBtn openDivBtn">
+            Brainstorm <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </li>
+        <div class="none" id="brainstorm">
+          <div class="brainstormText">
+            <h3>Brainstorm</h3>
+            <p>...</p>
+          </div>
+          <img src="/img/brainstorm.png" alt="toepasandeFoto" />
+          <!-- <a href="https://www.vecteezy.com/free-png/couple">Couple PNGs by Vecteezy</a> -->
+        </div>
+        <li>
+          <button class="solutionBtn openDivBtn">
+            Oplossing <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </li>
+        <div class="none" id="solved">
+          <div class="solvedText">
+            <h3>Oplossing</h3>
+            <p>
+              Ons idee om ervoor te zorgen dat mensen geen kosten moeten
+              uitgeven aan dit onnodige vandalisme, en dat graffitikunstenaars
+              niet op een illegale manier graffiti op mensen hun gevel gaan
+              spuiten. Dus kwamen we met een app, in samenwerking met
+              verschillende graffitikunstenaars. Op deze app kunnen mensen hun
+              muur een nieuw leven geven als zij dat willen, en dat kunnen ze
+              laten doen door een artiest naar keuze. Want onze app filtert voor
+              jou de beste artiesten uit via een aantal vragen die je eerst zal
+              moeten beantwoorden. Op basis van die vragen zal onze app dan een
+              aantal artiesten die passen bij jouw smaak aanduiden.
             </p>
           </div>
           <img src="https://picsum.photos/200" alt="toepasandeFoto" />
         </div>
-        <li>
-          <button class="fieldBtn">
-            Veld onderzoek <i class="fa-solid fa-caret-down"></i>
-          </button>
-        </li>
-        <li>
-          <button class="brainstormBtn">
-            Brainstorm <i class="fa-solid fa-caret-down"></i>
-          </button>
-        </li>
-        <li>
-          <button class="solutionBtn">
-            Oplossing <i class="fa-solid fa-caret-down"></i>
-          </button>
-          <div class="none" id="solved">
-            <img src="https://picsum.photos/200" alt="toepasandeFoto" />
-            <div class="solvedText">
-              <h3>Oplossing</h3>
-              <p>
-                In het begin van dit semester waren we kristisch aan het
-                nadenken over ons probleem...
-              </p>
-            </div>
-          </div>
-        </li>
       </ol>
     </div>
     <!-- APP -->
@@ -106,17 +146,34 @@
 
     <!-- FOOTER -->
     <footer>
+      <div>
+        <h1>Wie zijn wij?</h1>
+        <ul>
+          <li>
+            <p>Lars Van Damme</p>
+          </li>
+          <li>
+            <p>Bram Van Doren</p>
+          </li>
+          <li>
+            <p>Miel Vanhulle</p>
+          </li>
+          <li>
+            <p>Emiel Deboyser</p>
+          </li>
+        </ul>
+      </div>
       <div class="footerText">
         <h1 id="about">Over ons</h1>
         <p>
           Wij zijn een groepje studenten die een oplossing hebben gevonden voor
-          een probleem dat we zelf hebben ervaren. We hebben een app gemaakt
-          waarbij je een foto van je muur kan uploaden en een artiest kan kiezen
-          die jouw muur een nieuw leven geeft!
+          een probleem dat meer dan 1.000 Belgen per jaar last van hebben. We
+          hebben een app gemaakt waarbij je een foto van je muur kan uploaden en
+          een artiest kan kiezen die jouw muur een nieuw leven geeft!
         </p>
       </div>
       <div class="footerImg">
-        <img src="img/footer.png" alt="footer" />
+        <img src="img/icon.png" alt="footer" />
       </div>
     </footer>
     <script src="js/script.js"></script>

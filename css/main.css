@@ -31,7 +31,7 @@ header nav ul {
   align-items: center;
   background: #fff;
   border-bottom: 1px solid #000;
-  padding: 10px 20px;
+  padding: 30px 200px;
 }
 
 header nav ul li {
@@ -41,11 +41,16 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #000;
+  font-weight: 700;
+}
+
+header nav ul li a:hover {
+  border-bottom: 2px solid #000;
 }
 
 .ultraRight {
   display: flex;
-  gap: 10px;
+  gap: 40px;
 }
 
 /* HERO */
@@ -74,6 +79,8 @@ header nav ul li a {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.5;
+  text-align: center;
+  width: 80%;
 }
 
 .imgSide {
@@ -99,9 +106,34 @@ header nav ul li a {
 
 .hero {
   margin: 0 !important;
+  margin-bottom: 10vh !important;
+}
+
+.CTA {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 20px 30px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+
+.CTA:hover {
+  cursor: pointer;
+  background-color: rgb(141, 5, 5);
+  transition: 0.5s;
 }
 
 /* ABOUt */
+
+.about h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 20px 300px;
+}
 
 .about ol li {
   list-style-type: none;
@@ -116,26 +148,57 @@ ol {
   align-items: center;
 }
 
-.about ol li button {
-  font-weight: 700;
-  font-size: 1.2rem;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #969696;
-  width: 95vw;
-  text-align: right;
-}
-
 .about ol li button:hover {
   cursor: pointer;
 }
 
 #problem,
-#solved {
+#solved,
+#field,
+#brainstorm {
+  padding: 5vh 0;
   position: relative;
   display: flex;
+  gap: 5vw;
 }
 
+#problem div,
+#solved div,
+#field div,
+#brainstorm div {
+  width: 50vw;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#problem img,
+#solved img,
+#field img,
+#brainstorm img {
+  object-fit: cover;
+  height: 350px;
+  max-width: 450px;
+}
+
+.openDivBtn {
+  font-weight: 700;
+  font-size: 2.4rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #969696;
+  width: 95vw;
+  text-align: right;
+  color: #969696;
+}
+
+.openDivBtn:hover {
+  cursor: pointer;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
 /* #solved {
   border-bottom: 2px solid #969696;
 } */
@@ -169,12 +232,37 @@ ol {
 /* FOOTER */
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: black;
   color: white;
   border-top: 1px solid #000;
   padding: 10px 20px;
+}
+
+footer div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: fit-content;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.footerText p {
+  width: 20vw;
+  line-height: 1.5;
+  font-weight: 800;
+  font-size: 1.5rem;
+  /* padding: 0 5vw; */
+}
+
+.footerImg img {
+  height: 250px;
+  object-fit: cover;
+  max-width: 250px;
 }
 
 /* Thanks to W3Schools.com */
@@ -186,11 +274,6 @@ footer {
   position: relative;
   margin: auto;
 }
-
-/* Hide the images by default */
-/* .mySlides {
-  display: none;
-} */
 
 .mySlides img {
   object-fit: cover;

@@ -14,6 +14,20 @@ soltuion.addEventListener("click", function () {
   problem.classList.toggle("none");
 });
 
+const field = document.querySelector(".fieldBtn");
+
+field.addEventListener("click", function () {
+  const field = document.querySelector("#field");
+  field.classList.toggle("none");
+});
+
+const brainStorm = document.querySelector(".brainStormBtn");
+
+brainStorm.addEventListener("click", function () {
+  const brainStorm = document.querySelector("#brainstorm");
+  brainStorm.classList.toggle("none");
+});
+
 // SLIDESHOW
 let slideIndex = 0;
 showSlides();
