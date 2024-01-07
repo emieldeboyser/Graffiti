@@ -31,11 +31,16 @@ header nav ul {
   align-items: center;
   background: #fff;
   border-bottom: 1px solid #000;
-  padding: 30px 200px;
+  padding: 15px 200px;
 }
 
 header nav ul li {
   list-style-type: none;
+}
+
+header nav ul li img {
+  height: 50px;
+  object-fit: cover;
 }
 
 header nav ul li a {
@@ -203,30 +208,63 @@ ol {
   border-bottom: 2px solid #969696;
 } */
 
-.problemText,
-.solutionText {
-  width: 50vw;
+/* APPP */
+.appContainer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  gap: 10vh;
+  padding: 10vh 0;
 }
 
-/* APP */
-.app {
+.appContainerR {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  height: 100vh;
-  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10vh;
+  padding: 10vh 0;
 }
 
-.appText {
-  width: 50vw;
+.text {
+  max-width: 500px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.text h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.text p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  width: 80%;
+}
+
+.appPicture {
+  height: 650px;
+}
+
+.arrowL {
+  font-size: 5rem;
+  color: #969696;
+  height: 450px;
+  margin: 0 20vw;
+}
+
+.arrowR {
+  font-size: 5rem;
+  color: #969696;
+  height: 450px;
+  margin: 0 20vw;
+  /* flip on x ass 180deg */
 }
 
 /* FOOTER */
