@@ -80,6 +80,13 @@ header nav ul li a:hover {
   align-items: center;
 }
 
+.textSide h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #f58732;
+}
+
 .textSide p {
   font-size: 1.5rem;
   font-weight: 300;
@@ -117,7 +124,7 @@ header nav ul li a:hover {
 .CTA {
   text-decoration: none;
   color: white;
-  background-color: red;
+  background-color: #9e01ff;
   padding: 20px 30px;
   border-radius: 15px;
   font-weight: 700;
