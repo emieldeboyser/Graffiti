@@ -172,6 +172,7 @@ ol {
   position: relative;
   display: flex;
   gap: 5vw;
+  align-items: center;
 }
 
 #problem div,
@@ -184,6 +185,25 @@ ol {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.problemText h3,
+.solvedText h3,
+.fieldText h3,
+.brainstormText h3 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.problemText p,
+.solvedText p,
+.fieldText p,
+.brainstormText p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  width: 80%;
 }
 
 #problem img,
@@ -257,6 +277,7 @@ ol {
 
 .appPicture {
   height: 650px;
+  margin-top: -25px;
 }
 
 .arrowL {
