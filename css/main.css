@@ -295,6 +295,12 @@ ol {
   /* flip on x ass 180deg */
 }
 
+.artistHeader {
+  font-size: 8rem;
+  color: #f58732;
+  padding-left: 10vw;
+}
+
 /* FOOTER */
 footer {
   display: flex;
