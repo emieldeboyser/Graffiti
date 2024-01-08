@@ -28,6 +28,13 @@ brainStorm.addEventListener("click", function () {
   brainStorm.classList.toggle("none");
 });
 
+const reflection = document.querySelector(".reflectionBtn");
+
+reflection.addEventListener("click", function () {
+  const reflection = document.querySelector("#reflection");
+  reflection.classList.toggle("none");
+});
+
 // SLIDESHOW
 let slideIndex = 0;
 showSlides();

@@ -169,7 +169,8 @@ ol {
 #problem,
 #solved,
 #field,
-#brainstorm {
+#brainstorm,
+#reflection {
   padding: 5vh 0;
   position: relative;
   display: flex;
@@ -180,7 +181,8 @@ ol {
 #problem div,
 #solved div,
 #field div,
-#brainstorm div {
+#brainstorm div,
+#reflection div {
   width: 50vw;
   transition: 0.5s;
   display: flex;
@@ -192,7 +194,8 @@ ol {
 .problemText h3,
 .solvedText h3,
 .fieldText h3,
-.brainstormText h3 {
+.brainstormText h3,
+.reflectionText h3 {
   font-size: 4rem;
   font-weight: 900;
 }
@@ -200,7 +203,8 @@ ol {
 .problemText p,
 .solvedText p,
 .fieldText p,
-.brainstormText p {
+.brainstormText p,
+.reflectionText p {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.5;
@@ -211,7 +215,8 @@ ol {
 #problem img,
 #solved img,
 #field img,
-#brainstorm img {
+#brainstorm img,
+#reflection img {
   object-fit: cover;
   height: 350px;
   max-width: 450px;
@@ -350,14 +355,6 @@ ol {
   border-radius: 100%;
 }
 
-.aboutUs-team ul li img:hover {
-  height: 55px;
-  width: 55px;
-  object-fit: cover;
-  border-radius: 100%;
-  position: relative;
-}
-
 .aboutUs-team ul li p {
   font-weight: 500;
 }
@@ -389,6 +386,12 @@ footer {
   line-height: 1;
   font-weight: 800;
   font-size: 1.5rem;
+}
+
+.footerText a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* 
@@ -451,7 +454,8 @@ footer {
   #problem,
   #solved,
   #field,
-  #brainstorm {
+  #brainstorm,
+  #reflection {
     flex-direction: column;
     gap: 0;
     padding: 0;
@@ -460,7 +464,8 @@ footer {
   #problem div p,
   #solved div p,
   #field div p,
-  #brainstorm div p {
+  #brainstorm div p,
+  #reflection div p {
     width: 80vw;
   }
 
